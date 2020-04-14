@@ -1,0 +1,71 @@
+ 
+P_301 - +24Vin 
+  |
+      - GND 
+
+
+
+编码器
+
+步进电机 -TIM8_CHANNEL_1
+
+P501 
+ |
+PD15  - 1 - 步进1使能-（高电平刚性） 
+PD14  - 2 - 步进1方向                        
+PC6   - 3 - 步进1电机频率                
+
+		
+直流有刷电机 TIM8和TIM4和TIM9
+
+htimx_BDCMOTOR_TIMx                         TIM8
+
+htimx_DCMOTOR_COMMON_TIMx                   TIM4
+
+
+
+P401     -  -   - PA__6/TIM3_CH1  
+  |
+         -  -   - 
+
+P402     -  -   - PA__8/TIM1_CH1 左滚刀电机
+  |
+         -  -   - PD__3
+
+P403     -  -   - PA__9/TIM1_CH2  右滚刀电机
+  |
+         -  -   - PF_12
+
+P404     -  -   - PA_10/TIM1_CH3  左倒角
+  |
+         -  -   - PF_13
+
+P405     -  -   - PA_11/TIM1_CH4  右倒角
+  |
+         -  -   - PA12 
+
+
+
+
+
+传感器
+
+
+左倒角刀
+J_XX  -  +24Vout 
+  |
+       -  NET1 - PE15
+  |
+       -   GND
+右倒角刀
+J_XX  -  +24Vout 
+  |
+       -  NET1 - PE11
+  |
+       -   GND
+	   
+J_XX  -  +24Vout 
+  |
+       -  NET1 - PE8
+  |
+       -   GND
